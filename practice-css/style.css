@@ -9,11 +9,13 @@ body {
   width: 80em;
   margin: 0 auto;
 }
-
+h1, hooter p{
+  margin:-17px;
+}
 /* Typography */
 
 h1 {
-  font-size: 4em;
+  font-size: 7em;
 }
 
 h2 {
@@ -29,14 +31,12 @@ pli {
 /* header and footer */
 
 header, footer {
-  background-colour: teal;
+  background-color: rgba(0, 128, 128);
   height: 10em;
   padding: 2em;
 }
 
-h1, footer p {
-  margin: -70px;
-}
+
 
 h1 {
   text-align: center;
@@ -54,6 +54,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
   margin: 1.2em 2em;
 }
