@@ -27,9 +27,9 @@ function hantei() {
         ppppp.textContent=("もう終わりです");
     }}else if(kaisu<=4){
         if(kotae>yoso){
-            pppp.textContent=("早く当ててくださいもっと大きい数字でしょうが");
+            pppp.textContent=("もっと大きい数字に決まってるでしょうが");
         }else if(kotae<yoso){
-            pppp.textContent=("早く当ててくださいもっと小さい数字でしょうが");
+            pppp.textContent=("もっと小さい数字に決まってるでしょ");
         }else{
             pppp.textContent=("正解です。");
             ppppp.textContent=("もう終わりです");
