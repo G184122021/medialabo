@@ -13,6 +13,13 @@ header{
     background-color: black;
     color: red;
 }
+.tttt{
+  border: 10px ridge rgb(117, 2, 98);
+  background-color: rgb(255, 3, 192);
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+}
 .tt{
     border: 10px ridge #f00;
     background-color: #ff0;

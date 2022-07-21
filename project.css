@@ -1,3 +1,20 @@
-body{
-    background-color: pink;
-}
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f024df;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .Wavy {
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffe9a7 20px ), repeating-linear-gradient( #f83dd955, #ffbffc );
+  }
+  table {
+    width: 700px;
+    height: 600px;
+    color: white;
+    background-color: black;
+    
+    }
