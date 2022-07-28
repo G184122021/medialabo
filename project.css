@@ -1,20 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+h1{
+  font-size: 100px;
+  color: rgb(251, 255, 0);
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+}
+#title {
+  margin-top: 0;
+}
+.taetae{
+  font-size: 20px;
+}
+.tata{
+  font-family: Helvetica , "游ゴシック", sans-serif;
+color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.food{
+  text-align: center;
+}
+header{
+  background-image: url("mediterranean-cuisine-ga2f39da7c_1920.jpg");
+  background-position: 50% 20%;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: space-around;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 .bg_pattern {
-    position: fixed;
-    top: 0;
-    left: 0;
+    top: 10;
+    left: 100;
     width: 100vw;
-    height: 100vh;
-    background-color: #f024df;
+    height: 100vw;
+    background-color: #4a8358;
     opacity: 0.4;
     z-index: -1;
   }
   .Wavy {
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffe9a7 20px ), repeating-linear-gradient( #f83dd955, #ffbffc );
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 20px ), repeating-linear-gradient( #e3fff055, #95c8d8 );
   }
   table {
     width: 700px;
     height: 600px;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 254, 254);
     
+    }
+    body{
+      margin: 0;
+      padding: 0;
     }

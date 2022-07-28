@@ -221,7 +221,7 @@ function sendRequest() {
 		.catch(showError)
 		.then(finish);
 }
-
+result.textContent=("検索完了しました。");
 // 通信が成功した時の処理
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
@@ -245,6 +245,7 @@ function showResult(resp) {
  // two.textContent=
   //three.textContent
   //four.textContent
+  
 }
 
 // 通信エラーが発生した時の処理

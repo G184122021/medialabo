@@ -2,24 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>re</title>
+    <title>八王子グルメ情報</title>
     <script src="gourmet.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <link rel="stylesheet" href="project.css">
   </head>
   <body>
-    	
-<div class="bg_pattern Wavy">
-    <label for="taetae">店舗を検索: </label>
+    <header>
+       	<h1 id="titile">Hachiouji gourmet</h1>
+        <p class="tata">ジャンルを選択して検索！</p>
+    <label for="taetae"></label>
     <select id="food">
       <option value="G001">居酒屋</option>
       <option value="G002">ダイニングバー・バル</option>
       <option value="G003">創作料理</option>
-
+      <option value="G004">和食</option>
+      <option value="G005">洋食</option>
+      <option value="G006">イタリアン・フレンチ</option>
+      <option value="G007">中華</option>
+      <option value="G008">焼肉・ホルモン</option>
+      <option value="G009">アジア・エスニック料理</option>
+      <option value="G010">カラオケ・パーティ</option>
+      <option value="G011">バー・カクテル</option>
+      <option value="G013">ラーメン</option>
+      <option value="G014">カフェ・スイーツ</option>
+      <option value="G015">その他グルメ</option>
+      <option value="G016">お好み焼き・もんじゃ</option>
+      <option value="G017">韓国料理</option>
       </select>
     <button id="sendRequest">検索</button>
     <form action="" method="get" class="form-example">
-
+    </header> 
+      <div class="bg_pattern Wavy">
 <table border="2">
   <tbody>  <tr><th id = "kekka">結果</th></tr>
     <tr><td> 店舗名</td><td id = "name">name</td></tr>
