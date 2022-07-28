@@ -226,10 +226,10 @@ function sendRequest() {
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
 	let data = resp.data;
-  let one = document.querySelector('#name');
-  let two = document.querySelector('#access');
-  let three = document.querySelector('#address');
-  let four = document.querySelector('#time');
+  let one = document.querySelector('#name');let one1 = document.querySelector('#name1');let one2 = document.querySelector('#name2'); let one3 = document.querySelector('#name3');let one4 = document.querySelector('#name4');let one5 = document.querySelector('#name5');
+  let two = document.querySelector('#access');let two1 = document.querySelector('#access1');let two2 = document.querySelector('#access2');  let two3 = document.querySelector('#access3');let two4 = document.querySelector('#access4');let two5 = document.querySelector('#access5');
+  let th = document.querySelector('#ad');  let th1 = document.querySelector('#ad1');  let th2 = document.querySelector('#ad2');  let th3 = document.querySelector('#ad3');let th4 = document.querySelector('#ad4');  let th5 = document.querySelector('#ad5'); 
+  let four = document.querySelector('#time');  let four1 = document.querySelector('#time1');  let four2 = document.querySelector('#time2');  let four3 = document.querySelector('#time3');let four4 = document.querySelector('#time4');  let four5 = document.querySelector('#time5'); 
 
 	// data が文字列型なら，オブジェクトに変換する
 	if (typeof data === 'string') {
@@ -241,10 +241,29 @@ function showResult(resp) {
 
 	// data.x を出力
 	console.log(data.x);
-  one.textContent=resp.data.results.shop[0].name;
-  two.textContent=resp.data.results.shop[0].access;
-  three.textContent=resp.data.results.shpo[0].open;
-  four.textContent=resp.data.results.shop[0].name;
+  one.textContent=resp.data.results.shop[0].name;one1.textContent=resp.data.results.shop[1].name;one2.textContent=resp.data.results.shop[2].name;one3.textContent=resp.data.results.shop[3].name;one4.textContent=resp.data.results.shop[4].name;one5.textContent=resp.data.results.shop[5].name;
+  two.textContent=resp.data.results.shop[0].access;  two1.textContent=resp.data.results.shop[1].access;  two2.textContent=resp.data.results.shop[2].access;  two3.textContent=resp.data.results.shop[3].access;  two4.textContent=resp.data.results.shop[4].access;  two5.textContent=resp.data.results.shop[5].access;
+  th.textContent=resp.data.results.shop[0].address;  th1.textContent=resp.data.results.shop[1].address;  th2.textContent=resp.data.results.shop[2].address;  th3.textContent=resp.data.results.shop[3].address;th4.textContent=resp.data.results.shop[4].address;  th5.textContent=resp.data.results.shop[5].address; 
+  four.textContent=resp.data.results.shop[0].barrier_free;  four1.textContent=resp.data.results.shop[1].barrier_free;  four2.textContent=resp.data.results.shop[2].barrier_free; four3.textContent=resp.data.results.shop[3].barrier_free;  four4.textContent=resp.data.results.shop[4].barrier_free;  four5.textContent=resp.data.results.shop[5].barrier_free; 
+  let t = 0;
+  let result = document.querySelector('#kekka');
+  result.textContent=("完了");
+  let b = document.querySelector('#b');
+  let c = document.querySelector('#c');
+  let d = document.querySelector('#d');
+  let a = document.querySelector('#a');
+  a.textContent=("店舗名");
+  b.textContent=("アクセス");
+  c.textContent=("住所");
+  d.textContent=("バリアフリー");
+  //for(let n of data.results.shop){
+  //  console.log(n.access);
+  //  let p = document.createElement('name'+t);
+  //  p.textContent = n.name;
+  //  ta.insertAdjacentElement('afterend' , p);
+  //  t=t+1;
+ // }
+
   //four.textContent
   
 }
@@ -252,8 +271,15 @@ function showResult(resp) {
 // 通信エラーが発生した時の処理
 function showError(err) {
 	let result = document.querySelector('#kekka');
-  result.textContent=("検索できませんでした。");
-  one.textContent=("情報がありません");
+  let b = document.querySelector('#b');
+  let c = document.querySelector('#c');
+  let d = document.querySelector('#d');
+  let a = document.querySelector('#a');
+  result.textContent=("もう一度検索してね");
+  a.textContent=("情報");
+  b.textContent=("が");
+  c.textContent=("あり");
+  d.textContent=("ません");
 }	
 
 // 通信の最後にいつも実行する処理
