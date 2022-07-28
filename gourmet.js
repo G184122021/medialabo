@@ -243,8 +243,8 @@ function showResult(resp) {
 	console.log(data.x);
   one.textContent=resp.data.results.shop[0].name;
   two.textContent=resp.data.results.shop[0].access;
-  three.textContent=resp.data.results.shpo[0].n.name;
-  four.textContent=resp.data.results.shop[0].start_time
+  three.textContent=resp.data.results.shpo[0].open;
+  four.textContent=resp.data.results.shop[0].name;
   //four.textContent
   
 }
