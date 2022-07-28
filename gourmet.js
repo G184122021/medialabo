@@ -221,7 +221,7 @@ function sendRequest() {
 		.catch(showError)
 		.then(finish);
 }
-result.textContent=("検索完了しました。");
+//result.textContent=("検索完了しました。");
 // 通信が成功した時の処理
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
@@ -242,8 +242,9 @@ function showResult(resp) {
 	// data.x を出力
 	console.log(data.x);
   one.textContent=resp.data.results.shop[0].name;
- // two.textContent=
-  //three.textContent
+  two.textContent=resp.data.results.shop[0].access;
+  three.textContent=resp.data.results.shpo[0].n.name;
+  four.textContent=resp.data.results.shop[0].start_time
   //four.textContent
   
 }
@@ -252,6 +253,7 @@ function showResult(resp) {
 function showError(err) {
 	let result = document.querySelector('#kekka');
   result.textContent=("検索できませんでした。");
+  one.textContent=("情報がありません");
 }	
 
 // 通信の最後にいつも実行する処理
